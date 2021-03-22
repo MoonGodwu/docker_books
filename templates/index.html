@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <script>
+        $('.index').addClass('active')
+        $('.book').removeClass('active')
+        $('.author').removeClass('active')
+        $('.publish').removeClass('active')
+    </script>
+    <div class="jumbotron">
+        <h1>最大线上读书平台</h1>
+        <p>金瓶梅，西游记</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">赶紧点我吧</a></p>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3382765463,2779484476&fm=26&gp=0.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3382765463,2779484476&fm=26&gp=0.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <a href="#" class="thumbnail">
+                <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3382765463,2779484476&fm=26&gp=0.jpg" alt="...">
+            </a>
+        </div>
+    </div>
+{% endblock %}

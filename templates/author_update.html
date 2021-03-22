@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <title>修改作者</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-6 col-md-offset-3">
+            <h1>修改作者</h1>
+            <hr>
+            <form action="/author_update/{{ author.pk }}" method="post">
+
+                <div class="form-group">
+                    <p>姓名: <input type="text" name="name" class="form-control" value="{{ author.name }}"></p>
+                </div>
+                <div class="form-group">
+                    <p>性别: <input type="text" name="sex" class="form-control" value="{{ author.sex }}"></p>
+                </div>
+
+                <input type="submit" value="提交" class="btn btn-primary">
+            </form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
