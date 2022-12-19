@@ -30,7 +30,7 @@ class Author(models.Model):
     # 可以用ForeignKey,但是得设置唯一性约束,会报警告,不建议用,建议用OneToOneField
     # authordetail=models.ForeignKey(unique=True)
     # to='AuthorDetail'  加引号,这个表能找到就可以,不用引号,类必须在上面定义
-    authordetail = models.OneToOneField(to='AuthorDetail', to_field='id', null=True)
+    authordetail = models.OneToOneField(to='AuthorDetail', to_field='id', null=True,on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
